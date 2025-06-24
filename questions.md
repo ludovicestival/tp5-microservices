@@ -1,4 +1,4 @@
-# Partie 1
+# Partie 1
 
 1. Pourquoi voudrait-on diviser un gros service web en plusieurs morceaux plus petits ?
 Cela permet de faire évoluer l'application plus facilement, il suffit de modifier uniquement la partie concernée.
