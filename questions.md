@@ -85,6 +85,8 @@ On n'a plus besoin de s'occuper du SQL et utiliser la programmation objet pour m
 Non, SQLAlchemy permet d'exécuter des requêtes SQL directement.
 
 4. Est-ce que le code Python devient plus clair ou plus opaque avec un ORM ?
+Pour des requêtes simples il devient plus clair mais il peut devenir complexe si on enchaîne les filtres et autres appels de méthodes.
 
 5. À quel moment l’ORM peut devenir un inconvénient ? (performances, complexité, etc.)
+Dans le cas où on doit faire une requête complexe. IL serait plus rapide d'écrire la requête SQL.
 
