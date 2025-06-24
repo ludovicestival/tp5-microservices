@@ -88,5 +88,19 @@ Non, SQLAlchemy permet d'exécuter des requêtes SQL directement.
 Pour des requêtes simples il devient plus clair mais il peut devenir complexe si on enchaîne les filtres et autres appels de méthodes.
 
 5. À quel moment l’ORM peut devenir un inconvénient ? (performances, complexité, etc.)
-Dans le cas où on doit faire une requête complexe. IL serait plus rapide d'écrire la requête SQL.
+Dans le cas où on doit faire une requête complexe. Il serait plus rapide d'écrire la requête SQL plutôt que de parcourir toute la documentation pour trouver comment on fait.
 
+# Partie 4
+
+## Questions 2
+
+1. Ce service fait deux appels HTTP internes. Est-ce efficace ? Pourquoi ?
+
+2. Que se passe-t-il si l’un des deux services répond avec une erreur ou met trop de temps ?
+Cela peut ralentir et/ou bloquer la suite du programme.
+
+3. Peut-on réutiliser ce service dans d’autres cas (email, impression, vocal) ?
+Il faut juste l'adapter pour changer les services qu'il contacte.
+
+4. Quelle est la différence entre un service “client” (ex : navigateur) et ce nouveau service ?
+Ce service est client des APIs qu'il contacte.
